@@ -1,0 +1,15 @@
+*.pyc
+venv/
+.factory.secret
+.flaskit_check.cache
+env/*/secret.cfg
+env/*/secret.d/*
+env/*/local_config.d/*
+!.gitkeep
+log/
+flaskcache/
+doc/
+vendors/
+__pycache__/
+logs/
+saves/
