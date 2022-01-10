@@ -1,0 +1,29 @@
+variable "dynatrace_http_monitor_name" {
+    description = "Name of the http_monitor"
+    type = string
+}
+
+variable "dynatrace_http_monitor_frequency" {
+    type = number
+    description = "Frequence of http_monitor execution"
+    
+    validation {
+      condition = var.dynatrace_http_monitor_frequency >= 1 && var.dynatrace_http_monitor_frequency <= 10
+      error_message = "The frequency must be between 1 mn and 10min maximun beyong is not efficient"
+    }
+  default = 2
+}
+
+variable "APPLICATION_NAME" {
+    description = "Name of application"
+    type = string
+}
+
+variable "OWNER" {
+    description = "Owner name of http_monitor"
+    type = string
+}
+
+variable "GERENERATED-BY" {
+  default = "TERRAFORM-BRICE"
+}
