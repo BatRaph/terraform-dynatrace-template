@@ -9,8 +9,8 @@ terraform {
 }
 
 provider "dynatrace" {
-        dt_env_url   = "https://aqg50843.live.dynatrace.com"
-        dt_api_token = "dt0c01.MLL7FF7K6S32XFDPAFINB6FE.IETXKQUEUR25RWR5PJBOARC6C2LA75EDQ42BECACM5WGZ6QAW5HJ4KHKQSFO5NA6"
+        dt_env_url   = "dynatrace url"
+        dt_api_token = "token"
     }
     
 resource "dynatrace_http_monitor" "collect-datadog-slo-health" {
